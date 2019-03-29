@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/activity_2"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/cancel"
+        style="@style/ButtonTheme"
+        android:layout_above="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:padding="@dimen/text_padding"
+        android:text="@string/stop_service" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/pause1"
+            style="@style/ButtonTheme"
+            android:background="@drawable/ic_pause_black_24dp" />
+
+        <Button
+            android:id="@+id/play1"
+            style="@style/ButtonTheme"
+            android:background="@drawable/ic_play_arrow_black_24dp" />
+
+        <Button
+            android:id="@+id/stop1"
+            style="@style/ButtonTheme"
+            android:background="@drawable/ic_stop_black_24dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        style="@style/ButtonTheme"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:text="@string/next" />
+
+
+</RelativeLayout>
